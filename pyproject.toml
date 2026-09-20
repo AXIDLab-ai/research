@@ -1,0 +1,19 @@
+[build-system]
+requires = ["setuptools>=69"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "tips-policy-abm"
+version = "1.0.0"
+description = "Data-informed ABM of evaluation horizons and intermediary allocation"
+requires-python = ">=3.12,<3.14"
+dependencies = ["numpy==2.3.5", "pandas==3.0.1", "openpyxl==3.1.5"]
+
+[project.optional-dependencies]
+app = ["streamlit==1.64.0", "altair==6.3.0"]
+
+[project.scripts]
+tips-abm = "tips_abm.cli:main"
+
+[tool.setuptools.packages.find]
+include = ["tips_abm*"]
