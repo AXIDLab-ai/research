@@ -1,0 +1,1 @@
+{"operators":50,"slots":400,"cohorts":10,"warmup":5,"horizon":8,"seed":20260920,"candidate_ratio":3.0,"support_years":5,"unit_cost":1.0,"discount":0.0,"metric":"revenue","threshold":1000.0}
